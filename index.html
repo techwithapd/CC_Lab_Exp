@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> Form Page </title>
+        <style>
+            .grad1 {
+            height: 200px;
+            background-color: cyan; /* For browsers that do not support gradients */
+            background-image: linear-gradient(cyan, yellow); }
+            h2   {color: purple;}
+            label    {color: black;}
+        </style>
+	</head>
+
+    <body class="grad1">
+	    <u><h2>Registration form</h2></u>
+	    <form name="loginform" method="post" action="?">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname"><br><br>
+
+            <label for="mnumber">Mobile Number</label><br>
+            <input type="text" id="mnumber" name="number"><br><br>
+
+            <label for="email">Email I'd</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="address">Complete Address</label><br>
+            <textarea name="address" id="address" cols="20" rows="5"></textarea><br><br>
+
+            <label>Are you 18+ ?</label><br>
+            <input type="radio" id="ageyes" name="age">
+            <label for="ageyes">Yes</label><br>
+            <input type="radio" id="ageno" name="age">
+            <label for="ageno">No</label><br>
+          
+	    </form>
+	    <button type="button">Sign Up</button>
+    </body>
+</html>
